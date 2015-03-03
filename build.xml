@@ -28,8 +28,6 @@
 		<delete file="junit_py3.xml"/>
 		<delete file="pylint.txt"/>
 		<delete file="MANIFEST"/>
-		<delete file="MANIFEST.in"/>
-		<delete file="setup.py"/>
 		<delete>
 		    <fileset dir="." includes="**/*.pyc"/>
 		</delete>		
@@ -87,7 +85,7 @@
 	<target name="add_instance">
 		<exec executable="python3">
 			<env key="PYTHONPATH" value="${core.path}:$PYTHONPATH"/>
-			<arg value="${core.path}/lucterios/install/cmd.py"/>
+			<arg value="${core.path}/lucterios/install/lucterios-admin.py"/>
 			<arg value="add"/>
 			<arg value="--name=${test.instance}"/>
 			<arg value="--module=lucterios.dummy"/>			
@@ -103,7 +101,7 @@
 	<target name="del_instance">
 		<exec executable="python3">
 			<env key="PYTHONPATH" value="${core.path}:${env.PYTHONPATH}"/>
-			<arg value="${core.path}/lucterios/install/cmd.py"/>
+			<arg value="${core.path}/lucterios/install/lucterios-admin.py"/>
 			<arg value="del"/>
 			<arg value="--name=${test.instance}"/>
 		</exec>	
@@ -153,10 +151,6 @@
 
 	<target name="package">
 		<delete file="MANIFEST"/>
-		<delete file="MANIFEST.in"/>
-		<delete file="setup.py"/>
-		<copy file='deployed/setup_standard.py' tofile='setup.py'/>
-		<copy file='deployed/MANIFEST_standard.in' tofile='MANIFEST.in'/>
 		<exec executable="python3">
 			<arg value="setup.py"/>
 			<arg value="sdist"/>
