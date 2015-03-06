@@ -6,12 +6,12 @@ Created on 11 fevr. 2015
 '''
 
 from __future__ import unicode_literals
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import ugettext_lazy as _, ugettext
 from os.path import join, dirname
 import lucterios.standard
 
 def get_subtitle():
-    return "other subtitle"
+    return ugettext("Generic management application")
 
 APPLIS_NAME = lucterios.standard.__title__()
 APPLIS_VERSION = lucterios.standard.__version__

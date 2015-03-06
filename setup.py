@@ -24,7 +24,7 @@ setup(
     # Packages
     packages=["lucterios", "lucterios.standard"],
     package_data={
-       "lucterios.standard":['build', 'logo.gif', 'locale/*/*/*'],
+       "lucterios.standard":['build', 'logo.gif', 'locale/*/*/*', 'help/*'],
     },
     install_requires=["Lucterios>=2.0"],
 )
