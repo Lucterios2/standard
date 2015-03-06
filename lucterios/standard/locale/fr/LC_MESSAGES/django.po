@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 15:51+0000\n"
+"POT-Creation-Date: 2015-03-06 21:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Lucterios <support@lucterios.org>\n"
 "Language-Team: Lucterios <support@lucterios.org>\n"
@@ -31,7 +31,7 @@ msgid "(c) GPL Licence"
 msgstr "(c) 2015 lucterios.org - GPL Licence"
 
 #: help/presentation.html:2
-msgid "presentation"
+msgid "presentation.html"
 msgstr "Présentation"
 
 #: help/presentation.html:4
