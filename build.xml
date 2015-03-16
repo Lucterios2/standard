@@ -118,7 +118,7 @@
 		<exec executable="${testversion}">
 			<env key="PYTHONPATH" value="${core.path}:${env.PYTHONPATH}"/>
 			<arg value="run"/>
-			<arg value="--source=lucterios"/>
+			<arg value="--source=lucterios,${core.path}/lucterios"/>
 			<arg value="--omit=${core.path}/lucterios/install/*"/>
 			<arg value="--include=${core.path}/lucterios/CORE/*.py,${core.path}/lucterios/framework/*.py"/>
 			<arg value="./manage_${test.instance}.py"/>
@@ -131,6 +131,8 @@
 			<arg value="xml"/>
 		</exec>
 		<move file="coverage.xml" tofile="${testversion}.xml"/>
+		<replaceregexp file="${testversion}.xml" match='name="\..*\.workspace\.lct-core\.lucterios' replace='name="lucterios' byline="true" />
+		<replace file="${testversion}.xml" token='filename="lucterios' value='filename="${basedir}/lucterios' />
 	</target>
 
 	<target name="test_py2" if="python2.present">
