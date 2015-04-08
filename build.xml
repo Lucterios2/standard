@@ -89,6 +89,7 @@
 			<arg value="add"/>
 			<arg value="--name=${test.instance}"/>
 			<arg value="--module=lucterios.dummy"/>			
+			<arg value="--instance_path=${basedir}"/>
 		</exec>	
 	</target>	
 
@@ -96,8 +97,9 @@
 		<exec executable="python3">
 			<env key="PYTHONPATH" value="${basedir}:${core.path}:${env.PYTHONPATH}"/>
 			<arg value="${core.path}/lucterios/install/lucterios-admin.py"/>
-			<arg value="del"/>
+			<arg value="delete"/>
 			<arg value="--name=${test.instance}"/>
+			<arg value="--instance_path=${basedir}"/>
 		</exec>	
 	</target>	
 	
