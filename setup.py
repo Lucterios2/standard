@@ -9,7 +9,7 @@ from setuptools import setup
 from lucterios.standard import __version__
 
 setup(
-    name="Lucterios_standard",
+    name="lucterios-standard",
     version=__version__,
     author="Lucterios",
     author_email="support@lucterios.org",
@@ -26,5 +26,5 @@ setup(
     package_data={
        "lucterios.standard":['build', 'logo.gif', 'locale/*/*/*', 'help/*'],
     },
-    install_requires=["Lucterios >=2.0b1", "Lucterios_contacts >=2.0b1"],
+    install_requires=["Lucterios >=2.0", "Lucterios_contacts >=2.0"],
 )
