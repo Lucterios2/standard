@@ -26,5 +26,5 @@ setup(
     package_data={
        "lucterios.standard":['build', 'logo.gif', 'locale/*/*/*', 'help/*'],
     },
-    install_requires=["Lucterios >=2.0", "Lucterios_contacts >=2.0"],
+    install_requires=["lucterios >=2.0", "lucterios-contacts >=2.0"],
 )
