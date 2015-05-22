@@ -155,7 +155,7 @@
 			<arg value="setup.py"/>
 			<arg value="sdist"/>
 		</exec>	
-		<delete dir="Lucterios_standard.egg-info"/>
+		<delete dir="lucterios_standard.egg-info"/>
 	</target>
 
 </project>	
