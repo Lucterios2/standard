@@ -35,8 +35,10 @@
 	</target>
 
 	<target name="init">
-		<buildnumber />
-		<property name="projet.version.build" value="${build.number}"/>
+		<tstamp>
+			<format property="build.time" pattern="yyMMddHH" unit="hour" />
+		</tstamp>		
+		<property name="projet.version.build" value="${build.time}"/>
 		<echo message="${projet.version.build}" file="lucterios/standard/build" append="false" />
 	</target>
 
