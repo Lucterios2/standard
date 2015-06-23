@@ -46,9 +46,9 @@
 			<arg value="print(int('${build.hnum}', 16))"/>
 		</exec>		
 		<tstamp>
-			<format property="build.time" pattern="yyMMdd" unit="hour" />
+			<format property="build.time" pattern="yyMMddhh" unit="hour" />
 		</tstamp> 		
-		<property name="projet.version.build" value="${build.time}${build.num}"/>
+		<property name="projet.version.build" value="${build.time}"/>
 		<echo message="${projet.version.build}" file="lucterios/standard/build" append="false" />
 	</target>
 
