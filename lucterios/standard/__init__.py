@@ -39,3 +39,5 @@ def __title__():
     from django.utils.translation import ugettext_lazy as _
     return _("Lucterios standard")
 
+def link():
+    return ["lucterios.contacts", "lucterios.documents"]
