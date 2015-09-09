@@ -3,6 +3,7 @@
 	<property name="project.packagepath" value="lucterios/standard" />
 	<property name="project.packagename" value="lucterios.standard" />
 	<property name="project.name" value="lucterios" />
+	<property name="project.packname" value="lucterios_standard.egg-info" />
 	<property name="project.pythonpath" value="${core.path}:${env.PYTHONPATH}" />
 	<property name="project.modules" value="lucterios.dummy" />
 	<property name="project.appli" value="lucterios.standard" />
