@@ -30,7 +30,7 @@ setup(
     name="lucterios-standard",
     version=__version__,
     author="Lucterios",
-    author_email="support@lucterios.org",
+    author_email="info@lucterios.org",
     url="http://www.lucterios.org",
     description="Standard application for Lucterios.",
     long_description="""
@@ -40,9 +40,8 @@ setup(
     platforms=('Any',),
     license="GNU General Public License v3",
     classifiers=[
-        'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
-        'Framework :: Django :: 1.7',
+        'Framework :: Django :: 1.8',
         'Intended Audience :: Developers',
         'Intended Audience :: End Users/Desktop',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
@@ -55,7 +54,7 @@ setup(
     # Packages
     packages=["lucterios", "lucterios.standard"],
     package_data={
-        "lucterios.standard": ['build', 'logo.gif', 'locale/*/*/*', 'help/*'],
+        "lucterios.standard": ['build', 'fond.jpg', 'logo.ico', 'logo.png', 'locale/*/*/*', 'help/*'],
     },
     install_requires=["lucterios ==2.0.*", "lucterios-contacts ==2.0.*",
                       "lucterios-documents ==2.0.*"],
