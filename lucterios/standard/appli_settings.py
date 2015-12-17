@@ -39,9 +39,9 @@ def get_subtitle():
 
 APPLIS_NAME = lucterios.standard.__title__()
 APPLIS_VERSION = lucterios.standard.__version__
-APPLI_EMAIL = "support@sd-libre.fr"
-APPLIS_LOGO_NAME = join(dirname(__file__), "logo.png")
-APPLIS_FAVICON = join(dirname(__file__), "logo.ico")
+APPLI_EMAIL = "support@lucterios.org"
+APPLIS_LOGO_NAME = join(dirname(__file__), "Lucterios.png")
+APPLIS_FAVICON = join(dirname(__file__), "Lucterios.ico")
 APPLIS_BACKGROUND_NAME = join(dirname(__file__), "fond.jpg")
 APPLIS_COPYRIGHT = _("(c) GPL Licence")
 APPLIS_SUBTITLE = get_subtitle
