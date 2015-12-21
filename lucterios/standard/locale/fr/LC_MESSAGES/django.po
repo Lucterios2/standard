@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-25 13:43+0000\n"
+"POT-Creation-Date: 2015-12-16 10:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Lucterios <support@lucterios.org>\n"
 "Language-Team: Lucterios <support@lucterios.org>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "Lucterios standard"
 msgstr "Lucterios standard"
 
-#: appli_settings.py:37
+#: appli_settings.py:38
 msgid "Generic management application"
 msgstr "Application générique de gestion"
 
-#: appli_settings.py:43
+#: appli_settings.py:46
 msgid "(c) GPL Licence"
 msgstr "(c) 2015 lucterios.org - GPL Licence"
 
