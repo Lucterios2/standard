@@ -61,5 +61,5 @@ setup(
         "lucterios.standard": ['build', 'fond.jpg', 'Lucterios.ico', 'Lucterios.png', 'locale/*/*/*', 'help/*'],
     },
     install_requires=[
-        "lucterios ==2.0.*", "lucterios-contacts ==2.0.*", "lucterios-documents ==2.0.*"],
+        "lucterios ==2.1.*", "lucterios-contacts ==2.1.*", "lucterios-documents ==2.1.*"],
 )
