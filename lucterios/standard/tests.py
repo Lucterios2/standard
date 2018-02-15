@@ -31,32 +31,33 @@ from lucterios.CORE.views import get_wizard_step_list
 
 from lucterios.contacts.tests_contacts import change_ourdetail
 
+
 def create_individual(firstname, lastname):
-    empty_contact = Individual()                                                                                                            
-    empty_contact.firstname = firstname                                                                                                     
-    empty_contact.lastname = lastname                                                                                                       
+    empty_contact = Individual()
+    empty_contact.firstname = firstname
+    empty_contact.lastname = lastname
     empty_contact.address = "rue de la liberté"
     empty_contact.postal_code = "97250"
     empty_contact.city = "LE PRECHEUR"
     empty_contact.country = "MARTINIQUE"
     empty_contact.tel2 = "02-78-45-12-95"
     empty_contact.email = "%s.%s@worldcompany.com" % (firstname, lastname)
-    empty_contact.save()                                                                                                                    
+    empty_contact.save()
     return empty_contact
-                                                                                                                                            
-                                                                                                                                            
+
+
 def change_legal(name):
-    ourdetails = LegalEntity()                                                                                                              
-    ourdetails.name = name                                                                                                                  
+    ourdetails = LegalEntity()
+    ourdetails.name = name
     ourdetails.address = "Place des cocotiers"
     ourdetails.postal_code = "97200"
     ourdetails.city = "FORT DE FRANCE"
     ourdetails.country = "MARTINIQUE"
     ourdetails.tel1 = "01-23-45-67-89"
     ourdetails.email = "%s@worldcompany.com" % name
-    ourdetails.save()                                                                                                                       
-                                                                                                                                            
-                                                                                                                                            
+    ourdetails.save()
+
+
 def initial_contacts():
     change_ourdetail()  # contact 1
     create_individual('Avrel', 'Dalton')  # contact 2
@@ -66,6 +67,7 @@ def initial_contacts():
     create_individual('Lucky', 'Luke')  # contact 6
     change_legal("Minimum")  # contact 7
     change_legal("Maximum")  # contact 8
+
 
 class StandardTest(LucteriosTest):
 
