@@ -42,17 +42,16 @@ setup(
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
-        'Framework :: Django :: 1.8',
-        'Framework :: Django :: 1.9',
+        'Framework :: Django :: 2.0',
         'Intended Audience :: Developers',
         'Intended Audience :: End Users/Desktop',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Natural Language :: English',
         'Natural Language :: French',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Topic :: Database :: Front-Ends',
     ],
     # Packages
@@ -60,5 +59,5 @@ setup(
     package_data={
         "lucterios.standard": ['build', 'fond.jpg', 'Lucterios.ico', 'Lucterios.png', 'locale/*/*/*', 'help/*'],
     },
-    install_requires=["lucterios ==2.2.*", "lucterios-contacts ==2.2.*", "lucterios-documents ==2.2.*"],
+    install_requires=["lucterios ==2.3.*", "lucterios-contacts ==2.3.*", "lucterios-documents ==2.3.*"],
 )
