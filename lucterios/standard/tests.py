@@ -72,7 +72,6 @@ def initial_contacts():
 class StandardTest(LucteriosTest):
 
     def setUp(self):
-        self.xfer_class = XferContainerAcknowledge
         initial_contacts()
         LucteriosTest.setUp(self)
         contact = Individual.objects.get(id=5)
