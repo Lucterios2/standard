@@ -37,6 +37,7 @@ def get_subtitle():
     except LookupError:
         return ugettext("Generic management application")
 
+
 APPLIS_NAME = lucterios.standard.__title__()
 APPLIS_VERSION = lucterios.standard.__version__
 APPLI_EMAIL = "support@lucterios.org"
