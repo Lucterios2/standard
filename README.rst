@@ -1,3 +1,15 @@
+.. image:: https://img.shields.io/pypi/djversions/lucterios-standard
+    :target: https://pypi.org/project/lucterios-standard/
+    :alt: Django version
+
+.. image:: https://img.shields.io/pypi/v/lucterios-standard
+    :target: https://pypi.org/project/lucterios-standard/
+    :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/pyversions/lucterios-standard
+    :target: https://pypi.org/project/lucterios-standard/
+    :alt: Supported Python versions
+
 Standard appli of Lucterios framework
 =====================================
 
