@@ -25,7 +25,6 @@ along with Lucterios.  If not, see <http://www.gnu.org/licenses/>.
 from __future__ import unicode_literals
 
 from lucterios.framework.test import LucteriosTest, add_user
-from lucterios.framework.xfergraphic import XferContainerAcknowledge
 from lucterios.contacts.models import Individual, LegalEntity
 from lucterios.CORE.views import get_wizard_step_list
 
