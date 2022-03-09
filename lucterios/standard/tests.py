@@ -84,7 +84,7 @@ class StandardTest(LucteriosTest):
 
         self.calljson('/CORE/statusMenu', {}, 'get')
         self.assert_observer('core.custom', 'CORE', 'statusMenu')
-        self.assert_count_equal('', 12)
+        self.assert_count_equal('', 8)
 
     def test_wizard(self):
         self.calljson('/CORE/authentification', {'username': 'admin', 'password': 'admin'})
