@@ -2,3 +2,6 @@ include:
   - project: 'lucterios2/lucterios'
     ref: master
     file: '/utils/gitlab-ci_template.yml'
+
+variables:
+  MANUAL_PATH: lucterios/standard/pdf/build_fr/latex/LucteriosStandard.pdf
