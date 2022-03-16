@@ -5,11 +5,4 @@ include:
 
 variables:
   MANUAL_PATH: lucterios/standard/pdf/build_fr/latex/LucteriosStandard.pdf
-
-build:
-  before_script:
-    - apt-get install -y git
-    - mkdir clone
-    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.sleto.fr/lucterios2/lucterios clone/lct-core
-    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.sleto.fr/lucterios2/contacts clone/lct-contacts
-    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.sleto.fr/lucterios2/lucterios clone/lct-documents
+  CLONE_LIST: lucterios2/lucterios:lct-core lucterios2/contacts:lct-contacts lucterios2/documents:lct-documents
