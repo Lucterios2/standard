@@ -29,15 +29,20 @@ asso_path = os.path.abspath('../../..')
 for packname in ('standard', ):
     create_link(asso_path, packname)
 
-contact_path = os.path.abspath('../../../../../lct-contacts/lucterios')
+if os.path.islink("../../../../clone"):
+    clone_path = "../../../../clone"
+else:
+    clone_path = "../../../../.."
+
+contact_path = os.path.abspath(clone_path + '/lct-contacts/lucterios')
 for packname in ('contacts', 'mailing'):
     create_link(contact_path, packname)
 
-doc_path = os.path.abspath('../../../../../lct-documents/lucterios')
+doc_path = os.path.abspath(clone_path + '/lct-documents/lucterios')
 for packname in ('documents',):
     create_link(doc_path, packname)
 
-core_path = os.path.abspath('../../../../../lct-core/lucterios')
+core_path = os.path.abspath(clone_path + '/lct-core/lucterios')
 for packname in ('CORE',):
     create_link(core_path, packname)
 
