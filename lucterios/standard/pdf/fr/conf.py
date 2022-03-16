@@ -25,26 +25,28 @@ def create_link(rootpath, packagename):
     os.symlink(os.path.join(rootpath, packagename, 'docs', 'fr'), target_path)
 
 
-std_path = os.path.abspath('../../..')
+root_path = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))))
+
+std_path = os.path.join(root_path, 'lucterios')
 for packname in ('standard', ):
     create_link(std_path, packname)
 
-if os.path.islink("../../../../clone"):
-    clone_path = "../../../../clone"
+if os.path.isdir(os.path.join(root_path, 'clone')):
+    clone_path = os.path.join(root_path, 'clone')
 else:
-    clone_path = "../../../../.."
+    clone_path = os.path.dirname(root_path)
 
-contact_path = os.path.abspath(clone_path + '/lct-contacts/lucterios')
+contact_path = os.path.join(clone_path, 'lct-contacts', 'lucterios')
 print(">> contact_path", contact_path)
 for packname in ('contacts', 'mailing'):
     create_link(contact_path, packname)
 
-doc_path = os.path.abspath(clone_path + '/lct-documents/lucterios')
+doc_path = os.path.join(clone_path, 'lct-documents', 'lucterios')
 print(">> doc_path", doc_path)
 for packname in ('documents',):
     create_link(doc_path, packname)
 
-core_path = os.path.abspath(clone_path + '/lct-core/lucterios')
+core_path = os.path.join(clone_path, 'lct-core', 'lucterios')
 print(">> core_path", core_path)
 for packname in ('CORE',):
     create_link(core_path, packname)
