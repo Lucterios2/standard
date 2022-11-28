@@ -28,7 +28,7 @@ from lucterios.framework.test import LucteriosTest, add_user
 from lucterios.contacts.models import Individual, LegalEntity
 from lucterios.CORE.views import get_wizard_step_list
 
-from lucterios.contacts.tests_contacts import change_ourdetail
+from lucterios.contacts.test_tools import change_ourdetail
 
 
 def create_individual(firstname, lastname):
