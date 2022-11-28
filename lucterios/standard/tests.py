@@ -78,7 +78,7 @@ class StandardTest(LucteriosTest):
         contact.save()
 
     def test_status(self):
-        self.calljson('/CORE/authentification', {'username': 'admin', 'password': 'admin'})
+        self.calljson('/CORE/authentification', {'login': 'admin', 'password': 'admin'})
         self.assert_observer('core.auth', 'CORE', 'authentification')
         self.assert_json_equal('', '', 'OK')
 
@@ -87,7 +87,7 @@ class StandardTest(LucteriosTest):
         self.assert_count_equal('', 8)
 
     def test_wizard(self):
-        self.calljson('/CORE/authentification', {'username': 'admin', 'password': 'admin'})
+        self.calljson('/CORE/authentification', {'login': 'admin', 'password': 'admin'})
         self.assert_observer('core.auth', 'CORE', 'authentification')
         self.assert_json_equal('', '', 'OK')
 
@@ -123,7 +123,7 @@ class StandardTest(LucteriosTest):
         self.assert_count_equal('', 13)
 
     def test_situation(self):
-        self.calljson('/CORE/authentification', {'username': 'joe', 'password': 'joe'})
+        self.calljson('/CORE/authentification', {'login': 'joe', 'password': 'joe'})
         self.assert_observer('core.auth', 'CORE', 'authentification')
         self.assert_json_equal('', '', 'OK')
 
